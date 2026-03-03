@@ -1,0 +1,178 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  color: #333;
+}
+
+
+
+.menu {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(
+    135deg,
+    #ff9a9e,
+    #fad0c4,
+    #fad0c4,
+    #fbc2eb,
+    #a18cd1
+  );
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.menu:hover {
+  transform: scale(1.02);
+}
+
+
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 30px;
+  border-bottom: 2px solid #d4a373;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.established {
+  font-style: italic;
+  color: #777;
+}
+
+
+
+img {
+  display: block;
+  margin: 15px auto;
+  width: 60px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.item:hover {
+  background: #f1e3d3;
+  transform: translateX(5px);
+}
+
+.item p {
+  margin: 0;
+  font-size: 18px;
+}
+
+
+.flavor,
+.dessert,
+.price {
+  width: auto;
+  text-align: left;
+}
+
+.price {
+  font-weight: bold;
+  color: #7f5539;
+}
+
+
+
+hr {
+  border: none;
+  height: 2px;
+  background: #d4a373;
+  margin: 20px 0;
+}
+
+.bottom-line {
+  margin-top: 30px;
+}
+
+
+
+footer {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #7f5539;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #d4a373;
+}
+
+
+
+@media (max-width: 500px) {
+
+  .menu {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .price {
+    margin-top: 4px;
+  }
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
